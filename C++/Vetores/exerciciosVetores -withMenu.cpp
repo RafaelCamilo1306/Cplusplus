@@ -1,4 +1,5 @@
 
+//
 #include "iostream"
 #include "math.h"
 #include "cstdlib"
@@ -21,15 +22,15 @@ int main() {
 	    
 		cout <<" ============ Menu de exercicio ========";
 		cout <<"\nEscolha uma opção abaixo:";
-		cout <<"\nA) multiplicação de vetor\n";
+		cout <<"\nA) multiplicação de vetor\n"; 
 		cout << "\nS) Sair";
         cout << "\nOpção: ";
 		cin>> op;
 
 		switch (op) {
-    		case 'A':
-    		case 'a':
-    			E00A();
+    		case 'B':
+    		case 'b':
+    			E00B();
                 break;
     
             case 'S':
@@ -55,7 +56,21 @@ int exibeVetor(int vetor[], int tamanho){
     return 0;
 }
 
-int E00A() {
+int E00A(){
+    int vet[10];
+    for( int i= 0; i < 10 ; i++) {
+		cout<<"\r"<<i+1 <<"° valor:";
+		cout.flush(); 
+		cin>> vet[i];
+    }
+    cout<< "\n vetor: ";
+    exibeVetor(vet, 10);
+    cout<< "\n"<<endl;
+}
+
+
+
+int E00B() {
 	int vetA[8], vetB[8];
 
 	cout<<"\nDigite 8 valores para compor o vetor esse digitos serão multiplicado por 3\n";
@@ -72,9 +87,7 @@ int E00A() {
     
     cout<< "\n valores multiplicados: ";
     exibeVetor(vetB, 8);
-    cout<< "\n"
-    return 0;
-    
-    
+    cout<< "\n"<<endl;
+    return 0; 
 
 }
