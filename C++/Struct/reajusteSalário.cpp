@@ -53,9 +53,9 @@ void exibir() {
     
             for (int i = 0; i <= row; i++) {
                 cout << "| " << left << setw(18) << trab[i].nome  // Nome com 18 caracteres
-                     << "| " << right << setw(10) << fixed << setprecision(2) << trab[i].salario  // Salário com 2 casas decimais
-                     << "| " << right << setw(14) << fixed << setprecision(2) << trab[i].percentReajuste  // Percentual de reajuste
-                     << "| " << right << setw(10) << fixed << setprecision(2) << trab[i].valFinal << " |" << endl;  // Valor final com 2 casas decimais
+                     << "| " << right << setw(12) << fixed << setprecision(2) << trab[i].salario  // Salário com 2 casas decimais
+                     << "| " << right << setw(16) << fixed << setprecision(2) << trab[i].percentReajuste  // Percentual de reajuste
+                     << "| " << right << setw(12) << fixed << setprecision(2) << trab[i].valFinal << " |" << endl;  // Valor final com 2 casas decimais
             }
 
             cout << "+--------------------+------------+----------------+------------+" << endl;
@@ -69,7 +69,7 @@ void exibir() {
         system("sleep 1"); 
     }
 }
-// função para ler nome
+// função para ler nome 
 string ler_nome() {
     
     string nome;
